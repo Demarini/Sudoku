@@ -1,0 +1,14 @@
+﻿<Window x:Class="SudokuPuzzle.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:SudokuPuzzle.View"
+        xmlns:ViewModel="clr-namespace:SudokuPuzzle.ViewModel"
+        xmlns:Model="clr-namespace:SudokuPuzzle.Model"
+        Title="MainWindow" Height="475" Width="400" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    <Window.DataContext>
+        <ViewModel:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid Background="FloralWhite">
+        <ContentControl Content="{Binding ContentControlView}" />
+    </Grid>
+</Window>
